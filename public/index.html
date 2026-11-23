@@ -70,7 +70,12 @@ var BOOKS = [
   {title:"হেনা ভিলা",author:"আশরাফুর রহমান",file:"/books/hena-villa.pdf",cover:"/covers/hena-villa.jpg"},
   {title:"জল জ্যোৎস্না",author:"আশরাফুর রহমান",file:"/books/jol-jotsna.pdf",cover:"/covers/jol-jotsna.jpg"},
   {title:"মৃন্ময়ী",author:"আশরাফুর রহমান",file:"/books/mrinmoyi.pdf",cover:"/covers/mrinmoyi.jpg"}, 
-  {title:"অনন্ত অম্বরে",author:"আশরাফুর রহমান",file:"/books/anonto-ambore.pdf",",cover:"/covers/20261123_213727.jpg"}
+  {
+  title:"অনন্ত অম্বরে",
+  author:"আশরাফুর রহমান",
+  file:"https://drive.google.com/file/d/1lLr4qc-lrbHZ8e6YW2SWGmO3ii6tJl7U/preview",
+  cover:"/covers/20261123_213727.jpg"
+}
 ];
 function esc(s){ return String(s || "").replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
 function img(src, w){ return "/.netlify/images?url=" + encodeURIComponent(src) + "&w=" + w + "&fm=webp"; }
