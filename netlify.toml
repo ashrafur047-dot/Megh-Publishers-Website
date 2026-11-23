@@ -1,0 +1,16 @@
+# Plain static site — no build step. Everything in /public is served as-is.
+[build]
+  publish = "public"
+  command = ""
+
+# Let browsers cache the book PDFs for a day.
+[[headers]]
+  for = "/books/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

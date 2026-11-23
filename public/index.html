@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>মেঘ পাবলিশার্স — অনলাইনে বই পড়ুন</title>
+<meta name="description" content="মেঘ পাবলিশার্সের বই অনলাইনে বিনামূল্যে পড়ুন — হেনা ভিলা, জল জ্যোৎস্না, মৃন্ময়ী।"/>
+<meta name="theme-color" content="#12281a"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="মেঘ পাবলিশার্স"/>
+<meta property="og:description" content="মেঘ পাবলিশার্সের বই অনলাইনে বিনামূল্যে পড়ুন।"/>
+<meta property="og:image" content="https://megh-publishers.netlify.app/.netlify/images?url=/img/logo.png&w=1200&fm=png"/>
+<link rel="icon" type="image/png" href="/.netlify/images?url=/img/logo.png&w=64&fm=png"/>
+<link rel="apple-touch-icon" href="/.netlify/images?url=/img/logo.png&w=180&fm=png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;600;700&amp;family=Hind+Siliguri:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--bg:#f6f3ea;--card:#fff;--ink:#12281a;--mute:#5d6b5f;--leaf:#8a9a3f;--line:#e2ddcc}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Hind Siliguri","Noto Serif Bengali",system-ui,sans-serif;line-height:1.6;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.logo{display:block;width:210px;max-width:60%}
+.logo img{display:block;width:100%;height:auto}
+h1,h2{font-family:"Noto Serif Bengali",serif;margin:0}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+header{display:flex;justify-content:center;padding:22px 20px 16px;background:linear-gradient(180deg,#fffdf5,var(--bg));border-bottom:3px solid var(--leaf)}
+main{max-width:1000px;margin:0 auto;padding:28px 20px 48px}
+.intro h2{font-size:1.7rem}
+.intro p{color:var(--mute);margin:6px 0 18px}
+input{width:100%;max-width:420px;padding:12px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit;margin-bottom:18px}
+input:focus{outline:2px solid var(--leaf);outline-offset:1px}
+.btn{background:var(--ink);color:var(--bg);border-radius:12px;padding:11px 18px;font-weight:600;text-decoration:none;display:inline-block;transition:background .15s}
+.btn:hover,.btn:focus-visible{background:#2b4a2f}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.btn.ghost:hover,.btn.ghost:focus-visible{background:var(--bg)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:18px}
+.book{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;flex-direction:column;transition:transform .15s,box-shadow .15s}
+.book:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(18,40,26,.12)}
+.cover{aspect-ratio:2/3;display:flex;align-items:center;justify-content:center;text-align:center;font-family:"Noto Serif Bengali",serif;font-weight:700;font-size:1.05rem;color:#fff;background:linear-gradient(160deg,#12281a,#3b5a2a 60%,#8a9a3f)}
+.cover img{width:100%;height:100%;object-fit:cover;display:block}
+.info{padding:12px;display:flex;flex-direction:column;gap:4px;flex:1}
+.info b{font-family:"Noto Serif Bengali",serif;font-size:.98rem}
+.info span{color:var(--mute);font-size:.88rem}
+.actions{margin-top:auto;padding-top:8px;display:flex;flex-direction:column;gap:6px}
+.actions .btn{text-align:center;padding:9px}
+.empty{grid-column:1/-1;text-align:center;color:var(--mute);padding:40px 0;border:1px dashed var(--line);border-radius:14px}
+footer{text-align:center;color:var(--mute);font-size:.85rem;padding:20px}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="/"><img alt="মেঘ পাবলিশার্স" src="/.netlify/images?url=/img/logo.png&w=420&fm=webp" width="420" height="323"/></a>
+  <h1 class="sr-only">মেঘ পাবলিশার্স</h1>
+</header>
+<main>
+<div class="intro">
+<h2>আমাদের সংগ্রহ</h2>
+<p>পড়তে চাইলে বইয়ের নিচের বাটনে চাপ দিন।</p>
+<label class="sr-only" for="q">বই খুঁজুন</label>
+<input id="q" placeholder="বই বা লেখকের নাম খুঁজুন" type="search" autocomplete="off"/>
+</div>
+<div class="grid" id="grid" aria-live="polite">
+  <noscript><div class="empty">বইয়ের তালিকা দেখতে JavaScript চালু করুন। অথবা সরাসরি পড়ুন: <a href="/books/hena-villa.pdf">হেনা ভিলা</a> · <a href="/books/jol-jotsna.pdf">জল জ্যোৎস্না</a> · <a href="/books/mrinmoyi.pdf">মৃন্ময়ী</a></div></noscript>
+</div>
+</main>
+<footer>© <span id="yr">২০২৬</span> মেঘ পাবলিশার্স</footer>
+<script>
+var BOOKS = [
+  {title:"হেনা ভিলা",author:"আশরাফুর রহমান",file:"/books/hena-villa.pdf",cover:"/covers/hena-villa.jpg"},
+  {title:"জল জ্যোৎস্না",author:"আশরাফুর রহমান",file:"/books/jol-jotsna.pdf",cover:"/covers/jol-jotsna.jpg"},
+  {title:"মৃন্ময়ী",author:"আশরাফুর রহমান",file:"/books/mrinmoyi.pdf",cover:"/covers/mrinmoyi.jpg"}
+];
+function esc(s){ return String(s || "").replace(/[&<>"]/g, function(c){ return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]; }); }
+function img(src, w){ return "/.netlify/images?url=" + encodeURIComponent(src) + "&w=" + w + "&fm=webp"; }
+function render(term){
+  var g = document.getElementById("grid"), t = term.trim().toLowerCase();
+  var list = BOOKS.filter(function(b){ return (b.title + " " + b.author).toLowerCase().indexOf(t) > -1; });
+  if (!list.length) { g.innerHTML = '<div class="empty">কিছু পাওয়া যায়নি।</div>'; return; }
+  g.innerHTML = list.map(function(b){
+    var cv = b.cover
+      ? '<img src="' + img(b.cover, 400) + '" srcset="' + img(b.cover, 300) + ' 300w, ' + img(b.cover, 600) + ' 600w" sizes="(max-width: 420px) 50vw, 220px" width="400" height="600" loading="lazy" decoding="async" alt="' + esc(b.title) + ' — প্রচ্ছদ">'
+      : esc(b.title);
+    return '<article class="book"><div class="cover">' + cv + '</div><div class="info"><b>' + esc(b.title) + '</b><span>' + esc(b.author) + '</span>' +
+      '<div class="actions"><a class="btn" href="' + esc(b.file) + '" target="_blank" rel="noopener">পড়ুন</a>' +
+      '<a class="btn ghost" href="' + esc(b.file) + '" download>ডাউনলোড</a></div></div></article>';
+  }).join("");
+}
+render("");
+document.getElementById("q").addEventListener("input", function(e){ render(e.target.value); });
+try { document.getElementById("yr").textContent = new Date().getFullYear().toLocaleString("bn-BD", {useGrouping:false}); } catch (e) {}
+</script>
+</body>
+</html>
